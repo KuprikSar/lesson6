@@ -2,15 +2,20 @@
 
 #include <stdio.h>
 
-int recur(int n, int p) {
-    if (p == 0) {
+int recur(int n, int p) 
+{
+    if (p == 0) 
+    {
         return 1;
-    } else {
+    } 
+    else 
+    {
         return n * recur(n, p - 1);
     }
 }
 
-int main() {
+int main() 
+{
     int n, p;
     printf("enter base: ");
     scanf("%d", &n);
